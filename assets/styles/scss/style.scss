@@ -1,2 +1,42 @@
 @import "reset";
 @import "vars";
+@import "layout";
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  header {
+    #header_homepage {
+      width: 100vw;
+      height: 468px;
+      .header_background_img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(/assets/img/header_background.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .header_title_container {
+          h1 {
+            color: yellow;
+            font-size: 48px;
+            text-align: center;
+          }
+        }
+
+        .header_searchbar {
+          form {
+            input {
+              height: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
