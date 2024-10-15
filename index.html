@@ -5,6 +5,16 @@
     <title>Sup De Cuisine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="assets/styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef27a092c8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -16,37 +26,38 @@
               genereuses
             </h1>
           </div>
-          <div class="header_searchbar">
-            <form action="#" method="GET">
-              <input
-                type="search"
-                name="headerSearchBar"
-                placeholder="Recherchez une recette, un ingrédient, ..."
-                required
-              />
-              <button type="submit">Rechercher</button>
-            </form>
+          <div class="header_searchbar_container">
+            <input
+              type="search"
+              placeholder="Recherchez une recette, un ingrédient, ..."
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </button>
           </div>
         </div>
       </section>
     </header>
     <main>
-      <section id="recipes_navbar">
+      <section id="recipes_navbar" class="layout">
         <div class="selectors_container">
           <ul>
             <li>
-              <div class="dropdown_box">
-                <div class="selected_item">
-                  <input type="text" name="" value="Select" readonly />
-                </div>
+              <div class="dropdown">
+                <button class="dropdown_title">
+                  <p>Ingrédients</p>
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
                 <div class="dropdown_content">
-                  <div class="search_bar">
-                    <input type="text" name="" />
+                  <div class="dropdown_searchbar_container">
+                    <input type="text" placeholder="Poulet, ..." />
+                    <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
-                  <ul>
-                    <li class="dropdown_item">Poulet</li>
-                    <li class="dropdown_item">Tomate</li>
-                    <li class="dropdown_item">Ail</li>
+
+                  <ul id="dropdown_items">
+                    <li class="item">Poulet</li>
+                    <li class="item">Tomate</li>
+                    <li class="item">Ail</li>
                   </ul>
                 </div>
               </div>
@@ -56,7 +67,7 @@
           </ul>
         </div>
       </section>
-      <section id="recipes_grid">
+      <section id="recipes_grid" class="layout">
         <article>
           <div class="recipes_img">
             <img src="#" alt="Image de la recette" />

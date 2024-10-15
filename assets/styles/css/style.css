@@ -133,9 +133,14 @@ table {
   border-spacing: 0;
 }
 
+.layout {
+  padding: 0 120px;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 body header #header_homepage {
   width: 100vw;
@@ -148,17 +153,82 @@ body header #header_homepage .header_background_img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/header_background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/header_background.jpg);
   background-position: center;
   background-size: cover;
 }
-body header #header_homepage .header_background_img .header_title_container h1 {
-  color: yellow;
-  font-size: 48px;
-  text-align: center;
+body header #header_homepage .header_background_img .header_title_container {
+  padding: 0 80px 25px;
 }
-body header #header_homepage .header_background_img .header_searchbar form input {
-  height: 70px;
+body header #header_homepage .header_background_img .header_title_container h1 {
+  color: #eedd5b;
+  font-size: 2.5rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+body header #header_homepage .header_background_img .header_searchbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #000;
+}
+body header #header_homepage .header_background_img .header_searchbar_container input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  font-size: 1.25rem;
+  outline: none;
+  color: #777;
+}
+body header #header_homepage .header_background_img .header_searchbar_container input::placeholder {
+  color: #ccc;
+  font-weight: 400;
+  font-family: "Fredoka", sans-serif;
+}
+body header #header_homepage .header_background_img .header_searchbar_container button {
+  background: none;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+body main #recipes_navbar .selectors_container {
+  padding: 50px 0;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 130px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown .dropdown_title {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown .dropdown_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown .dropdown_content .dropdown_searchbar_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
