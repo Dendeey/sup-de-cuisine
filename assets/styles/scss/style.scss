@@ -76,6 +76,8 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 28px;
+
         ul {
           display: flex;
           flex-direction: row;
@@ -90,6 +92,9 @@ body {
               padding: 5px;
               border: 2px solid #000;
               border-radius: 8px;
+              background-color: white;
+              position: relative;
+              z-index: 1;
               .dropdown_title_container {
                 width: 100%;
                 border: none;
@@ -99,11 +104,8 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
-                p {
-                  font-family: $fredoka;
-                  font-size: 0.875rem;
-                }
+                font-family: $fredoka;
+                font-size: 0.875rem;
 
                 .searchbar_arrow_up {
                   transform: rotate(180deg);
@@ -117,10 +119,11 @@ body {
               }
 
               .dropdown_content {
-                display: none;
+                display: flex;
                 flex-direction: column;
                 gap: 10px;
-
+                background-color: white;
+                z-index: 1;
                 .dropdown_searchbar_container {
                   display: flex;
                   align-items: center;
