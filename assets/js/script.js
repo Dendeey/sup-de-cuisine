@@ -1,1 +1,3 @@
-import { rotateArrow } from "/dropdown/dropdown.js";
+import { rotateArrow } from "/assets/js/dropdown/dropdown.js";
+
+rotateArrow();

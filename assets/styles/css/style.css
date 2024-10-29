@@ -232,6 +232,7 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdo
   justify-content: space-between;
   font-family: "Fredoka", sans-serif;
   font-size: 0.875rem;
+  cursor: pointer;
 }
 body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_title_container .searchbar_arrow_up {
   transform: rotate(180deg);
@@ -276,6 +277,7 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdo
 body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items .item {
   font-size: 0.875rem;
   font-family: "Fredoka", sans-serif;
+  cursor: pointer;
 }
 body main #recipes_navbar .selectors_container .recipes_counter_container {
   align-self: center;
