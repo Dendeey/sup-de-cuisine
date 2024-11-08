@@ -1,0 +1,46 @@
+body {
+  main {
+    #recipes_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      article {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    main {
+      #recipes_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  body {
+    main {
+      #recipes_grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .layout {
+    padding: 0 5%;
+  }
+  body {
+    main {
+      #recipes_grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

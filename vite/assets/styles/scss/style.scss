@@ -1,0 +1,15 @@
+@import "vars";
+@import "layout/reset";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/recipes_navbar";
+@import "layout/recipes_grid";
+@import "components/recipe_card";
+@import "layout/footer";
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: $fredoka;
+}

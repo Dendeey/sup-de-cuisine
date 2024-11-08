@@ -1,0 +1,14 @@
+body {
+  footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow;
+    margin-top: 2rem;
+
+    p {
+      font-weight: 600;
+    }
+  }
+}
