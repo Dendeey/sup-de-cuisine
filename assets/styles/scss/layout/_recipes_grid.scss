@@ -4,9 +4,6 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 4rem;
-      article {
-        border: 1px solid black;
-      }
     }
   }
 }

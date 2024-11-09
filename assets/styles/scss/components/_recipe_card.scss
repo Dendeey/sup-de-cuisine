@@ -2,6 +2,8 @@ body {
   main {
     #recipes_grid {
       article {
+        border: 1.5px solid black;
+        border-radius: 0 0 3% 3%;
         width: 100%;
         height: 528px;
         .recipes_img {
