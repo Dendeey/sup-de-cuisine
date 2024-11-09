@@ -49,11 +49,12 @@ body {
               }
 
               .dropdown_content {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 gap: 10px;
                 background-color: white;
                 z-index: 1;
+
                 .dropdown_searchbar_container {
                   display: flex;
                   align-items: center;
@@ -76,6 +77,10 @@ body {
                     font-size: 0.875rem;
                   }
                 }
+              }
+
+              .show {
+                display: flex;
               }
 
               .dropdown_items {

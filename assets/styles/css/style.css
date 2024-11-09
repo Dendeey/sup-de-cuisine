@@ -274,7 +274,7 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdo
   transition: 0.5s;
 }
 body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_content {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   background-color: white;
@@ -299,6 +299,9 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdo
   color: #cccccc;
   font-family: "Fredoka", sans-serif;
   font-size: 0.875rem;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown_container .show {
+  display: flex;
 }
 body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items {
   display: flex;
