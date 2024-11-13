@@ -321,6 +321,7 @@ body main #recipes_navbar #tag-filter-container {
   display: flex;
   gap: 0.5rem;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 body main #recipes_navbar #tag-filter-container .tag_filter {
   font-family: "Fredoka", sans-serif;

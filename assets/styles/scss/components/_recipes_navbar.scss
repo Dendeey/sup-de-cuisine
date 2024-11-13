@@ -107,6 +107,7 @@ body {
         display: flex;
         gap: 0.5rem;
         padding-bottom: 50px;
+        flex-wrap: wrap;
         .tag_filter {
           font-family: $fredoka;
           font-size: 0.875rem;
