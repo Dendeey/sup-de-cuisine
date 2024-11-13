@@ -313,10 +313,8 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdo
   font-family: "Fredoka", sans-serif;
   cursor: pointer;
 }
-body main #recipes_navbar .selectors_container .recipes_counter_container {
+body main #recipes_navbar .selectors_container #recipes-counter-container {
   align-self: center;
-}
-body main #recipes_navbar .selectors_container .recipes_counter_container .recipes_counter {
   font-size: 1.25rem;
 }
 
@@ -333,7 +331,7 @@ body main #recipes_navbar .selectors_container .recipes_counter_container .recip
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  body main #recipes_navbar .selectors_container .recipes_counter_container {
+  body main #recipes_navbar .selectors_container #recipes-counter-container {
     align-self: flex-start;
   }
 }
@@ -350,7 +348,7 @@ body main #recipes_navbar .selectors_container .recipes_counter_container .recip
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  body main #recipes_navbar .selectors_container .recipes_counter_container {
+  body main #recipes_navbar .selectors_container #recipes-counter-container {
     align-self: flex-start;
   }
 }

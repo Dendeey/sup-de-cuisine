@@ -14,6 +14,7 @@ export async function getCardData() {
         ? recipe.description.slice(0, maxDescriptionLength) + "..."
         : recipe.description;
     const card = document.createElement("article");
+    card.classList.add("recipe-card");
     card.innerHTML = `
     <div class="recipes_img">
         <img src="/assets/img/json_recipes/${recipe.image}" alt="Image de la recette" loading="lazy"/>
@@ -51,4 +52,18 @@ export async function getCardData() {
     }
     recipesGrid.appendChild(card);
   }
+  // Mettre à jour le compteur des recettes
+  updateRecipeCount();
+}
+
+// Fonction pour mettre à jour dynamiquement le compteur de recettes
+function updateRecipeCount() {
+  const displayedRecipes = document.querySelectorAll(".recipe-card").length; // Compter les cartes affichées
+  const recipeCountDisplay = document.getElementById(
+    "recipes-counter-container"
+  );
+
+  recipeCountDisplay.textContent = `${displayedRecipes} recette${
+    displayedRecipes > 1 ? "s" : ""
+  }`;
 }
