@@ -1,5 +1,5 @@
 import { fileURLToPath } from "url";
 
 export default {
-  base: "/sup-de-Cuisine/",
+  base: "/sup-de-cuisine/",
 };
