@@ -86,11 +86,16 @@ body {
               .dropdown_items {
                 display: flex;
                 flex-direction: column;
-                gap: 3px;
-                .item {
+                gap: 9px;
+                overflow-y: scroll;
+                max-height: 8rem;
+                .dropdown_item {
                   font-size: 0.875rem;
                   font-family: $fredoka;
                   cursor: pointer;
+                }
+                .dropdown_item:hover {
+                  color: $grey;
                 }
               }
             }

@@ -38,6 +38,8 @@ body {
             p {
               font-size: 12px;
               color: $cardGrey;
+              overflow-y: scroll;
+              max-height: 4rem;
             }
           }
           .recipes_ingredients {

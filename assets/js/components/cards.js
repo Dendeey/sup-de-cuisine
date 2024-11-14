@@ -26,11 +26,11 @@ export async function getCardData(query = "") {
   // Afficher les recettes filtrées
   for (let i = 0; i < filteredRecipes.length; i++) {
     const recipe = filteredRecipes[i];
-    const maxDescriptionLength = 250;
-    const shortDescription =
-      recipe.description.length > maxDescriptionLength
-        ? recipe.description.slice(0, maxDescriptionLength) + "..."
-        : recipe.description;
+    // const maxDescriptionLength = 250;
+    // const shortDescription =
+    //   recipe.description.length > maxDescriptionLength
+    //     ? recipe.description.slice(0, maxDescriptionLength) + "..."
+    //     : recipe.description;
 
     const card = document.createElement("article");
     card.classList.add("recipe-card");
@@ -44,7 +44,7 @@ export async function getCardData(query = "") {
           </div>
           <div class="recipes_steps">
               <h3>Recette</h3>
-              <p>${shortDescription}</p>
+              <p>${recipe.description}</p>
           </div>
           <div class="recipes_ingredients">
               <h3>Ingrédients</h3>

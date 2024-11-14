@@ -306,12 +306,17 @@ body main #recipes_navbar .selectors_container ul li .dropdown_container .show {
 body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 9px;
+  overflow-y: scroll;
+  max-height: 8rem;
 }
-body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items .item {
+body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items .dropdown_item {
   font-size: 0.875rem;
   font-family: "Fredoka", sans-serif;
   cursor: pointer;
+}
+body main #recipes_navbar .selectors_container ul li .dropdown_container .dropdown_items .dropdown_item:hover {
+  color: #cccccc;
 }
 body main #recipes_navbar .selectors_container #recipes-counter-container {
   align-self: center;
@@ -408,6 +413,8 @@ body main #recipes_grid article .recipes_content .recipes_steps h3 {
 body main #recipes_grid article .recipes_content .recipes_steps p {
   font-size: 12px;
   color: #999999;
+  overflow-y: scroll;
+  max-height: 4rem;
 }
 body main #recipes_grid article .recipes_content .recipes_ingredients h3 {
   font-size: 12px;
