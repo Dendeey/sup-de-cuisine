@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sup De Cuisine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef27a092c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/sup-de-cuisine/assets/index-Cf87ROE3.js"></script>
+    <link rel="stylesheet" crossorigin href="/sup-de-cuisine/assets/index-BcBzT7jf.css">
+  </head>
+  <body>
+    <header>
+      <section id="header_homepage">
+        <div class="header_background_img">
+          <div class="header_title_container">
+            <h1>
+              Cherchez parmis plus de 1500 recettes du quotidien, simples et
+              genereuses
+            </h1>
+          </div>
+          <div class="header_searchbar_container">
+            <input
+              type="search"
+              id="searchbar-input"
+              placeholder="Recherchez une recette, un ingrédient, ..."
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="recipes_navbar" class="layout">
+        <div class="selectors_container">
+          <ul>
+            <li>
+              <div class="dropdown_container">
+                <button id="ingredient-btn" class="dropdown_title_container">
+                  Ingrédients
+                  <i
+                    id="ingredient-arrow"
+                    class="fa-solid fa-angle-down searchbar_arrow_up"
+                  ></i>
+                </button>
+                <div id="ingredient-dropdown-content" class="dropdown_content">
+                  <div class="dropdown_searchbar_container">
+                    <input type="text" placeholder="Poulet, ..." />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <ul class="dropdown_items"></ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown_container">
+                <button id="appareil-btn" class="dropdown_title_container">
+                  Appareils
+                  <i
+                    id="appareil-arrow"
+                    class="fa-solid fa-angle-down searchbar_arrow_up"
+                  ></i>
+                </button>
+                <div id="appareil-dropdown-content" class="dropdown_content">
+                  <div class="dropdown_searchbar_container">
+                    <input type="text" placeholder="Casserole, ..." />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+
+                  <ul class="dropdown_items"></ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown_container">
+                <button id="ustensile-btn" class="dropdown_title_container">
+                  Ustensiles
+                  <i
+                    id="ustensile-arrow"
+                    class="fa-solid fa-angle-down searchbar_arrow_up"
+                  ></i>
+                </button>
+                <div id="ustensile-dropdown-content" class="dropdown_content">
+                  <div class="dropdown_searchbar_container">
+                    <input type="text" placeholder="Spatule, ..." />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+
+                  <ul class="dropdown_items"></ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="recipes-counter-container"></div>
+        </div>
+        <div id="tag-filter-container"></div>
+      </section>
+      <section id="recipes_grid" class="layout"></section>
+      <footer>
+        <p>Sup de Cuisine</p>
+      </footer>
+    </main>
+  </body>
+</html>
